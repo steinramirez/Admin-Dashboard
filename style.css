@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@300&family=Saira+Stencil+One&display=swap');
+
+:root{
+    --color-font:white;
+    --background-color:#1992d4;
+    --card-bg-color:rgb(86, 86, 86);
+    --content-bg-color:#4a4a4a;
+}
+*{
+   
+    font-family: 'Roboto', 'Comfortaa', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0%;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+
+.main
+{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    margin:0;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    
+
+
+}
+.headerbar{
+    background-color: rgb(55, 54, 54) ;
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 10vh 15vh;
+    box-shadow: 0 0 3px 0;
+    align-items:center;
+    justify-content: center;
+    z-index: 1;
+    color:white;
+    border-radius: 0 20px 0 0 ;
+}
+.search{
+    grid-column-start: 1;  
+    align-items: center;
+    justify-content: left;
+    margin-left:25px;
+}
+.searchInput{
+    border-radius:30px;
+    border-style: none;
+    padding: 5px;
+    width: 70%;
+    background-color: #e2e8f0;
+}
+.searchInput:focus{
+    border-style:none;
+    border:2px solid orange;
+    outline:none;
+}
+.logos
+{
+    grid-column-start: 2;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.profile{
+    grid-column-start: 1;
+    grid-row-start:2;
+    gap:10px;
+}
+
+.buttons{
+    grid-column-start: 2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.button{
+    padding:8px 20px 8px 20px;
+    background-color: orange;
+    color: var(--color-font);
+    border-radius:20px;
+    border:none;
+    
+}
+.button:hover{
+    color: white;
+    background-color:#0b0d0d;
+    border: 3px solid orange;
+    cursor:crosshair;
+}
+.content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: var(--content-bg-color);
+    border-radius: 0 0 20px 0 ;
+    padding: 10px;
+
+}
+.sidebar{
+    color:var(--color-font);
+    grid-column: 1/2;
+    grid-row:1/4;
+    background-color: #3f4244;
+    width: 100%;
+    padding-left:20px;
+    border-radius: 20px 0 0 20px;
+}
+.sidebar h3{
+    color:orange;
+    font-family: ;
+}
+.title{
+    padding:30px;
+    margin-bottom:20px;
+}
+.list2{
+    margin-top:20px;
+}
+.item-list-sidebar{
+    margin:10px;
+    padding: 10px;
+
+}
+.item-list-sidebar:hover{
+    background-color: #0b0d0d;
+    color: orange;
+    border: 0.5px solid orange;
+    border-radius: 20px 20px 0 20px;
+    cursor: crosshair;
+}
+i{
+    margin-right:10px;
+}
+ul{
+    list-style: none;
+}
+.profilePicSmall{
+    /*border:1px solid black;*/
+    width: 50px;
+    height: 50px;
+    border-radius:40px;  
+}
+img{
+    border-radius:60px;
+}
+a.profileName{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+.profile{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: left;
+    margin-left:4vh;   
+    padding: 10px;
+}
+.profile:hover{
+    background-color:#0b0d0d;
+    border-radius: 20px 20px 0 20px ;
+    padding:10px 10px 10px 20px;
+}
+.contentSection-1{
+    padding: 20px;
+    grid-column:1;
+    grid-template: 20px auto / 1fr 1fr;
+
+}
+.contentSection-2{
+   padding-top:20px;
+   gap:20px;
+   padding-right: 20px;
+} 
+.cards{
+    display:grid;
+    gap:20px;
+
+}
+.titleCard{
+    font-weight: bold;
+    grid-column: 1/3;
+    margin:10px;
+    color: orange;
+}
+.card{
+    background-color:var(--card-bg-color);
+    border-radius:5px;
+    padding:25px;
+  
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 1px 5px #888888;
+}
+.t-card{
+    gap:20px;
+    display: flex;
+    flex-direction: inherit;
+}
+.card-icons{
+    display:flex;
+    justify-content: flex-end;
+    position:relative;
+}
+div .t-card h2 {
+    font-size: small;
+}
+div .t-card p {
+    font-size: small;
+}
+.announcementList{
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+}
+.under-list{
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+}
+.under-list h2{
+    font-weight: bolder;
+}
+.card{
+    font-size: small;
+}
+.trending-profile{
+    display:flex;
+    flex-direction: column;
+    font-size: small;
+    gap:10px;
+}
+.text-card-trending{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+.d-cards{
+    display:flex;
+    flex-direction: column;
+
+}
+.card h2 {
+    color: orange;
+    font-weight: bold;
+}
+.card p{
+    color: white;
+}
+.fa-regular{
+    color:orange;
+}
+.name-greet h4{
+    color:orange;
+}
+.item-list-sidebar{
+
+}
